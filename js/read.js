@@ -1,0 +1,47 @@
+function readTeams() {
+
+    makeRequest("http://34.89.70.8:8080/teams").then((data) => {
+        console.log(data);
+
+        let teamData = JSON.parse(data);
+
+        console.log(teamData);
+
+        let teamInfo = [];
+        let teams;
+
+        for (let p of teamData) {
+            teams = [];
+
+            teams.push(p.id);
+            teams.push(p.name);
+            teams.push(p.rating);
+
+
+            teamInfo.push(teams);
+
+            console.log(teams);
+        }
+
+        for (let team of teamInfo) {
+            inTable(team);
+        }
+
+    });
+}
+
+
+function inTable(data) {
+    let tableBody = document.getElementById("tableBody");
+    let contInner;
+
+    let container = document.createElement("tr");
+    tableBody.appendChild(container);
+
+    for (let team of data) {
+        contInner = document.createElement("td");
+        contInner.innerHTML = team;
+        container.appendChild(contInner);
+    }
+
+}
