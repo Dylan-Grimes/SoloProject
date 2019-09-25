@@ -14,8 +14,8 @@ function readTeams() {
             teams = [];
 
             teams.push(p.id);
-            teams.push(p.name);
-            teams.push(p.rating);
+            teams.push(p.teamName);
+            teams.push(p.teamRating);
 
 
             teamInfo.push(teams);
