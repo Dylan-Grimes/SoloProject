@@ -42,24 +42,40 @@ function readPlayers() {
         let teamInfo = [];
         let teams;
 
-        // for (let p of teamData) {
-        //     teams = [];
-
-        //     teams.push(p.id);
-        //     teams.push(p.teamName);
-        //     teams.push(p.teamRating);
-
-
-        //     teamInfo.push(teams);
-
-        //     console.log(teams);
-        // }
-
-        // for (let team of teamData) {
-        //     inTable(team);
-        // }
+        for (let player of playerData) {
+            inTable(team);
+        }
 
     });
+}
+
+function inModal(data) {
+    let tableBody = document.getElementById("playerList");
+    let contInner;
+
+    let players;
+    let playersValues = [];
+    players = [];
+
+    players.push(data.name);
+    players.push(data.rating);
+    players.push(data.role);
+
+    playersValues.push(players);
+    console.log(players);
+
+    for (let player of players) {
+        contInner = document.createElement("Label");
+
+        var typ = document.createAttribute("class");
+        typ.value = "col-form-label";
+        contInner.attributes.setNamedItem(typ)
+        
+        contInner.innerHTML = player;
+        console.log(team);
+        container.appendChild(contInner);
+        }
+    
 }
 
 

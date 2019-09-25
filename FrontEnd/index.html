@@ -46,10 +46,6 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateFunctionality">Update a Team</button>
           </div>
           <br>
-          <div>
-              <input type="number" class="form-control col-2" id="idToDelete" placeholder="ID">
-              <button type="button" class="btn btn-primary" onclick=deleteTeam()>Delete a Team by ID</button>
-          </div>
       </div>
 
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -115,21 +111,20 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="updateFunctionalityTitle">Update a Team</h5>
+            <h5 class="modal-title" id="updateFunctionalityTitle">Team</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form onsubmit="return submitUpdateForm(this)">
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">ID</label>
-                <input name="id" type="number" class="form-control" id="inputUpdateId">
-                <label for="recipient-name" class="col-form-label">Name:</label>
-                <input name="teamName" type="text" class="form-control" id="inputUpdateName">
-                <label for="recipient-name" class="col-form-label">Ranking:</label>
-                <input name="teamRating" type="text" class="form-control" id="inputUpdateRating">
+            <form >
+              <div class="form-group" id="playerList">
+
                 <div class="modal-footer">
+                    <div>
+                        <input type="number" class="form-control col-2" id="idToDelete" placeholder="ID">
+                        <button type="button" class="btn btn-primary" onclick=deleteTeam()>Delete a Team by ID</button>
+                    </div>
                   <input type="submit" class="btn btn-primary" value="Submit">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
