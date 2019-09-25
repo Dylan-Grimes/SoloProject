@@ -84,9 +84,12 @@ function inTable(data) {
     for (let team of teams) {
         contInner = document.createElement("td");
 
-        var typ = document.createAttribute("");
-        typ.value = "data-toggle='modal' data-target='#playerModal'";
+        var typ = document.createAttribute("data-toggle");
+        typ.value = "modal data-target";
+        var typ2 = document.createAttribute("data-target");
+        typ.value = "#playerModal";
         contInner.attributes.setNamedItem(typ)
+        contInner.attributes.setNamedItem(typ2)
         
         
         contInner.innerHTML = team;
