@@ -39,7 +39,7 @@ function inTable(data) {
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
-    for (let team of data) {
+    for (let team in data) {
         contInner = document.createElement("td");
         contInner.innerHTML = team;
         for (let key in team ) {
