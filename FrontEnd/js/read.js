@@ -1,6 +1,6 @@
 function readTeams() {
 
-    makeRequest("http://34.89.70.8:8080/teams").then((data) => {
+    makeRequest("http://34.89.70.8:9000/teams").then((data) => {
         console.log(data);
 
         let teamData = JSON.parse(data);

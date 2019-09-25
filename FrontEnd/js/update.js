@@ -12,10 +12,10 @@ function submitUpdateForm(formData) {
         }
     }
 
-    console.log("http://34.89.70.8:8080/teams/" + id);
+    console.log("http://34.89.70.8:9000/teams/" + id);
     console.log(keyValues);
 
-    makeRequest("http://34.89.70.8:8080/teams/" + id, keyValues, "PUT")
+    makeRequest("http://34.89.70.8:9000/teams/" + id, keyValues, "PUT")
         .then((data) => {
             console.log("it Worked!" + data);
 
