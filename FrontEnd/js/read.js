@@ -41,6 +41,8 @@ function inTable(data) {
 
     for (let team in data) {
         contInner = document.createElement("td");
+        console.log("tst1" + team);
+        console.log("tst2" + team.value);
         for (let key in team ) {
 
             contInner.innerHTML = team.value;
