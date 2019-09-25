@@ -45,6 +45,7 @@ function readPlayers() {
         for (let player of playerData) {
             inModal(player);
         }
+        sortTable(teamTable);
 
     });
 }
