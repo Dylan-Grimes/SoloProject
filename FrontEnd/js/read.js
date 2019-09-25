@@ -58,8 +58,8 @@ function inModal(data) {
     players = [];
 
     players.push(data.name);
-    players.push(data.rating);
-    players.push(data.role);
+    players.push(data.playerRating);
+    players.push(data.playerRole);
 
     playersValues.push(players);
     console.log(players);
