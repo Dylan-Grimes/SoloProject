@@ -57,15 +57,11 @@ function inTable(data) {
 
 
     for (let pair in data) {
-        contInner = document.createElement("td");
-        console.log(pair)
+        let tagName = document.createAttribute("name");
 
-            let tagName = document.createAttribute("name");
-
-            tagName.value = pair;
-            contInner.setAttributeNode(tagName);
-            container.appendChild(contInner);
-
+        tagName.value = pair;
+        contInner.setAttributeNode(tagName);
+        container.appendChild(contInner);
     }
 
 }
