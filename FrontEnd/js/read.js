@@ -34,13 +34,13 @@ function readTeams() {
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
-    console.log("data" , data);
-    console.log("data2" , data.value);
+    //console.log("data" , data);
+    //console.log("data2" , data.value);
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
-    for (let pair in data.value) {
+    for (let pair in data) {
         contInner = document.createElement("td");
         console.log(pair, pair.value);
 
