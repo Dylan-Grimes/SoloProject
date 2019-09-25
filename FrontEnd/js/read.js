@@ -93,7 +93,7 @@ function inTable(data) {
         contInner.attributes.setNamedItem(typ1)
 
         var typ2 = document.createAttribute("onclick");
-        typ2.value = readPlayers();
+        typ2.value = "readPlayers()";
         contInner.attributes.setNamedItem(typ2)
         
         
