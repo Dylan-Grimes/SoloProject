@@ -50,19 +50,19 @@ function inTable(data) {
     console.log(teams);
 
     for (let team of teams) {
+        for (let key of data) {
         contInner = document.createElement("td");
         contInner.innerHTML = team;
         console.log(team);
         container.appendChild(contInner);
 
-    }
 
-    for (let i = 0; i < data.length; i++) {
-        console.log(data.value);
+        console.log(key);
         let tagName = document.createAttribute("name");
-        tagName.value = data.value;
+        tagName.value = key;
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
+        }
     }
   
     
