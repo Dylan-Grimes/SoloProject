@@ -53,11 +53,11 @@ function inTable(data) {
     for (let pair in data) {
         contInner = document.createElement("td");
 
-        for (let member of teams) {
-
-            contInner.innerHTML = member;
-            //container.appendChild(contInner);
-        }
+        let i = 0;
+        
+        contInner.innerHTML = teams[i];
+        //container.appendChild(contInner);
+        i++;
 
         let tagName = document.createAttribute("name");
         tagName.value = pair;
