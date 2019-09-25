@@ -57,13 +57,13 @@ function inTable(data) {
 
     }
 
-    // for (let pair in data) {
-    //     console.log(pair);
-    //     let tagName = document.createAttribute("name");
-    //     tagName.value = pair;
-    //     contInner.setAttributeNode(tagName);
-    //     container.appendChild(contInner);
- 
-    // }
-    // container.appendChild(contInner);
+    for (let i = 0; i < data.length(); i) {
+        console.log(data.value);
+        let tagName = document.createAttribute("name");
+        tagName.value = data.value;
+        contInner.setAttributeNode(tagName);
+        container.appendChild(contInner);
+    }
+    i++;
+    
 }
