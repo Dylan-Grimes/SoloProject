@@ -43,15 +43,28 @@ function inTable(data) {
         contInner = document.createElement("td");
         console.log(pair)
 
-        for (let key in pair ) {
+        let teams;
+        let teamsValues = [];
+        for (let p of pair) {
+
+
+            teams = [];
+
+            teams.push(p.id);
+            teams.push(p.teamName);
+            teams.push(p.teamRating);
+
+
+            teamsValues.push(teams);
+            console.log(teams);
+        }
 
             contInner.innerHTML = key;
             let tagName = document.createAttribute("name");
-            console.log(key);
-            tagName.value = key;
+
+            tagName.value = pair;
             contInner.setAttributeNode(tagName);
             container.appendChild(contInner);
-        }
 
     }
 
