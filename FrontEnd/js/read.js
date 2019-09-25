@@ -56,13 +56,13 @@ function inTable(data) {
                 contInner = document.createElement("td");
                 contInner.innerHTML = member;
                 container.appendChild(contInner);
-
+            }
             let tagName = document.createAttribute("name");
 
             tagName.value = pair;
             contInner.setAttributeNode(tagName);
             container.appendChild(contInner);
-            }
+
 
     }
 
