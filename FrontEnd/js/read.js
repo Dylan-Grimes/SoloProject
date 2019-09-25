@@ -67,7 +67,7 @@ function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
 
-    let container = document.createElement("tr data-toggle='modal' data-target='#playerModal'");
+    let container = document.createElement("tr");
     tableBody.appendChild(container);
 
     let teams;
@@ -82,7 +82,7 @@ function inTable(data) {
     console.log(teams);
 
     for (let team of teams) {
-        contInner = document.createElement("td");
+        contInner = document.createElement("td data-toggle='modal' data-target='#playerModal'");
         
         
         contInner.innerHTML = team;
