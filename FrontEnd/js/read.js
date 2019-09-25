@@ -48,8 +48,9 @@ function inTable(data) {
 
     teamsValues.push(teams);
     console.log(teams);
-    for (let pair in data) {
+
     for (let member of teams) {
+        for (let pair in data) {
         contInner = document.createElement("td");
         contInner.innerHTML = member;
         container.appendChild(contInner);
