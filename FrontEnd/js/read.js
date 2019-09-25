@@ -43,7 +43,7 @@ function inTable(data) {
         contInner = document.createElement("td");
         for (let key in team ) {
 
-            contInner.innerHTML = key.value;
+            contInner.innerHTML = team.value;
             let tagName = document.createAttribute("name");
             console.log("team "+ team);
             tagName.value = team;
