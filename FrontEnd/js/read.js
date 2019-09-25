@@ -57,13 +57,13 @@ function inTable(data) {
 
     }
 
-    for (let i = 0; i < data.length; i) {
+    for (let i = 0; i < data.length; i++) {
         console.log(data.value);
         let tagName = document.createAttribute("name");
         tagName.value = data.value;
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
     }
-    i++;
+  
     
 }
