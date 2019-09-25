@@ -46,7 +46,7 @@ function inTable(data) {
 
         for (let key in pair ) {
 
-            contInner.innerHTML = key.value;
+            contInner.innerHTML = key;
             let tagName = document.createAttribute("name");
             console.log(key);
             tagName.value = key;
