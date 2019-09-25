@@ -51,8 +51,9 @@ function inTable(data) {
             console.log("team "+ team);
             tagName.value = team;
             contInner.setAttributeNode(tagName);
+            container.appendChild(contInner);
         }
-        container.appendChild(contInner);
+
     }
 
 }
