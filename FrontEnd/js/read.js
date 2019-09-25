@@ -23,7 +23,7 @@ function readTeams() {
             console.log(teams);
         }
 
-        for (let team of teamData) {
+        for (let team in teamData) {
             inTable(team);
         }
 
