@@ -34,14 +34,14 @@ function readTeams() {
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
-    console.log(data, data.teamName.id);
+    console.log(data, data.teamName);
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
     for (let pair in data.id) {
         contInner = document.createElement("td");
-        console.log(pair, pair.value);
+        console.log(pair)
 
         for (let key in pair ) {
 
