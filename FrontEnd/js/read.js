@@ -38,26 +38,27 @@ function inTable(data) {
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
+    let teams;
+    let teamsValues = [];
+    for (let p of data) {
+
+
+        teams = [];
+
+        teams.push(p.id);
+        teams.push(p.teamName);
+        teams.push(p.teamRating);
+
+
+        teamsValues.push(teams);
+        console.log(teams);
+    }
 
     for (let pair in data) {
         contInner = document.createElement("td");
         console.log(pair)
 
-        let teams;
-        let teamsValues = [];
-        for (let p of pair) {
 
-
-            teams = [];
-
-            teams.push(p.id);
-            teams.push(p.teamName);
-            teams.push(p.teamRating);
-
-
-            teamsValues.push(teams);
-            console.log(teams);
-        }
 
             contInner.innerHTML = key;
             let tagName = document.createAttribute("name");
