@@ -39,7 +39,7 @@ function inTable(data) {
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
-    for (let pair in data.id) {
+    for (let pair in data) {
         contInner = document.createElement("td");
         console.log(pair)
 
