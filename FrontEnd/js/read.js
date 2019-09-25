@@ -58,7 +58,7 @@ function inTable(data) {
     }
 
     for (let pair in data) {
-
+        console.log(pair);
         let tagName = document.createAttribute("name");
         tagName.value = pair;
         contInner.setAttributeNode(tagName);
