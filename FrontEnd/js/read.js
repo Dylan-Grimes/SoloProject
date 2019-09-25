@@ -50,7 +50,7 @@ function readPlayers() {
 }
 
 function inModal(data) {
-    let tableBody = document.getElementById("playerList");
+    let div = document.getElementById("playerList");
     let contInner;
 
     let players;
@@ -73,7 +73,7 @@ function inModal(data) {
         
         contInner.innerHTML = player;
         console.log(player);
-        container.appendChild(contInner);
+        div.appendChild(contInner);
     }
     
 }
