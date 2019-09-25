@@ -36,13 +36,13 @@ function inTable(data) {
     let contInner;
 
     let container = document.createElement("tr");
-    tableBody.appendChild(container);
+
 
     for (let team of data) {
+        tableBody.appendChild(container);
         contInner = document.createElement("td");
 
         for (let key in team) {
-
             contInner.innerHTML = team;
             let tagName = document.createAttribute("name");
             tagName.value = key;
