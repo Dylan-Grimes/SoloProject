@@ -38,21 +38,17 @@ function inTable(data) {
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
+
     let teams;
     let teamsValues = [];
-    for (let p of data) {
+    teams = [];
 
+    teams.push(data.id);
+    teams.push(data.teamName);
+    teams.push(data.teamRating);
 
-        teams = [];
-
-        teams.push(p.id);
-        teams.push(p.teamName);
-        teams.push(p.teamRating);
-
-
-        teamsValues.push(teams);
-        console.log(teams);
-    }
+    teamsValues.push(teams);
+    console.log(teams);
 
     for (let pair in data) {
         contInner = document.createElement("td");
