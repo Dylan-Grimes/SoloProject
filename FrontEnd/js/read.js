@@ -56,7 +56,7 @@ function inTable(data) {
         let i = 0;
         
         contInner.innerHTML = teams[i];
-        //container.appendChild(contInner);
+        container.appendChild(contInner);
         console.log(teams[i].value);
         i++;
 
