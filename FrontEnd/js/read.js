@@ -67,7 +67,7 @@ function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
 
-    let container = document.createElement("tr");
+    let container = document.createElement("tr data-toggle='modal' data-target='#playerModal'");
     tableBody.appendChild(container);
 
     let teams;
