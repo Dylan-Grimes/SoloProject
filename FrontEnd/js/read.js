@@ -34,8 +34,7 @@ function readTeams() {
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
-    //console.log("data" , data);
-    //console.log("data2" , data.value);
+    console.log(data, data.value);
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
