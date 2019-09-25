@@ -56,13 +56,13 @@ function inTable(data) {
         for (let member of teams) {
 
             contInner.innerHTML = member;
-            container.appendChild(contInner);
+            //container.appendChild(contInner);
         }
 
         let tagName = document.createAttribute("name");
         tagName.value = pair;
         contInner.setAttributeNode(tagName);
-        //container.appendChild(contInner);
+        container.appendChild(contInner);
     }
 
 
