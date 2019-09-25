@@ -43,7 +43,7 @@ function readPlayers() {
         let teams;
 
         for (let player of playerData) {
-            inModal(team);
+            inModal(player);
         }
 
     });
