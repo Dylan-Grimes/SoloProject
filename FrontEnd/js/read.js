@@ -40,16 +40,16 @@ function inTable(data) {
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
-    for (let team in data) {
+    for (let key in data) {
         contInner = document.createElement("td");
-        console.log("tst1" , team);
-        console.log("tst2" , team.value);
-        for (let key in team ) {
+        console.log(key, key.value);
 
-            contInner.innerHTML = team.value;
+        for (let key in key ) {
+
+            contInner.innerHTML = key.value;
             let tagName = document.createAttribute("name");
-            console.log("team " , team);
-            tagName.value = team;
+            console.log("team " , key);
+            tagName.value = key;
             contInner.setAttributeNode(tagName);
             container.appendChild(contInner);
         }
