@@ -132,15 +132,18 @@ function inTable(data) {
   
     
 }
-function sortTable() {
-var table, rows, switching, i, x, y, shouldSwitch;
+function sortTable(table) {
+let rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("teamTable");
     switching = true;
     while (switching) {
+        switching = false;
+        rows = table.rows;
+
         for (i = 1; i < (rows.length - 1); i++) {
             shouldSwitch = false;
-            x = rows[i].getElementsByTagName("teamName")[0];
-            y = rows[i + 1].getElementsByTagName("teamName")[0];
+            x = rows[i].getElementsByTagName("TD")["teamName"];
+            y = rows[i + 1].getElementsByTagName("TD")["teamName"];
             if (Number(x.innerHTML) > Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
@@ -153,6 +156,5 @@ var table, rows, switching, i, x, y, shouldSwitch;
         rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
         switching = true;
         // Each time a switch is done, increase this count by 1:
-        switchcount ++;
     } 
 }
