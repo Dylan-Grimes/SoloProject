@@ -36,20 +36,17 @@ function inTable(data) {
     let contInner;
 
     let container = document.createElement("tr");
-
+    tableBody.appendChild(container);
 
     for (let team of data) {
-        tableBody.appendChild(container);
         contInner = document.createElement("td");
         contInner.innerHTML = team;
-        let tagName = document.createAttribute("name");
         for (let key in team) {
-
-            tagName.value = key;
-            contInner.setAttributeNode(tagName);
-            container.appendChild(contInner);
+        let tagName = document.createAttribute("name");
+        tagName.value = key;
+        contInner.setAttributeNode(tagName);
         }
-
+        container.appendChild(contInner);
     }
 
 }
