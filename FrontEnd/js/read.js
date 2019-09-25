@@ -49,20 +49,22 @@ function inTable(data) {
     teamsValues.push(teams);
     console.log(teams);
 
-
-    for (let pair in data) {
-        contInner = document.createElement("td");
-        let tagName = document.createAttribute("name");
-        tagName.value = pair;
-        contInner.setAttributeNode(tagName);
-
- 
-
     for (let team of teams) {
+        contInner = document.createElement("td");
         contInner.innerHTML = team;
         console.log(team);
         container.appendChild(contInner);
+
     }
+    for (let pair in data) {
+
+        let tagName = document.createAttribute("name");
+        tagName.value = pair;
+        contInner.setAttributeNode(tagName);
+        container.appendChild(contInner);
+ 
+
+
     }
     
 
