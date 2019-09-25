@@ -65,7 +65,14 @@ function inTable(data) {
         container.appendChild(contInner);
     }
 
-    var table, rows, switching, i, x, y, shouldSwitch;
+    
+
+
+  
+    
+}
+function sortTable() {
+var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("teamTable");
     switching = true;
     while (switching) {
@@ -86,10 +93,5 @@ function inTable(data) {
         switching = true;
         // Each time a switch is done, increase this count by 1:
         switchcount ++;
-      } 
-
-
-  
-    
+    } 
 }
-
