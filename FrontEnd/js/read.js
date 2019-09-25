@@ -52,20 +52,17 @@ function inTable(data) {
 
     for (let pair in data) {
         contInner = document.createElement("td");
-
-
-        for (let team of teams) {
-        contInner.innerHTML = team;
-        container.appendChild(contInner);
-        console.log(team);
-        }
         let tagName = document.createAttribute("name");
         tagName.value = pair;
         contInner.setAttributeNode(tagName);
-        container.appendChild(contInner);
+
     }
 
-    //test
+    for (let team of teams) {
+        contInner.innerHTML = team;
+        console.log(team);
+    }
 
+    container.appendChild(contInner);
 
 }
