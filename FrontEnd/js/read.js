@@ -23,7 +23,7 @@ function readTeams() {
             console.log(teams);
         }
 
-        for (let team of teamInfo) {
+        for (let team of teamData) {
             inTable(team);
         }
 
@@ -34,6 +34,7 @@ function readTeams() {
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
+    console.log("data" + data);
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
@@ -41,13 +42,12 @@ function inTable(data) {
     for (let team of data) {
         contInner = document.createElement("td");
         contInner.innerHTML = team;
-        //for (let key in team) {
+        for (let key in team ) {
         let tagName = document.createAttribute("name");
-        console.log("team "+team);
+        console.log("team "+ team);
         tagName.value = team.value;
-        console.log(tagName);
         contInner.setAttributeNode(tagName);
-        //}
+        }
         container.appendChild(contInner);
     }
 
