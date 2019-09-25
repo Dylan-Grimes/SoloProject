@@ -57,7 +57,7 @@ function inTable(data) {
         
         contInner.innerHTML = teams[i];
         //container.appendChild(contInner);
-        console.log(teams[i]);
+        console.log(teams[i].value);
         i++;
 
         let tagName = document.createAttribute("name");
