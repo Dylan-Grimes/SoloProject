@@ -56,13 +56,14 @@ function inTable(data) {
         tagName.value = pair;
         contInner.setAttributeNode(tagName);
 
-    }
+ 
 
     for (let team of teams) {
         contInner.innerHTML = team;
         console.log(team);
+        container.appendChild(contInner);
     }
-
-    container.appendChild(contInner);
+    }
+    
 
 }
