@@ -40,11 +40,11 @@ function inTable(data) {
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
-    for (let key in data) {
+    for (let pair in data) {
         contInner = document.createElement("td");
-        console.log(key, key.value);
+        console.log(pair, pair.value);
 
-        for (let key in key ) {
+        for (let key in pair ) {
 
             contInner.innerHTML = key.value;
             let tagName = document.createAttribute("name");
