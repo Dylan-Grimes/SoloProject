@@ -43,7 +43,7 @@ function readPlayers() {
         let teams;
 
         for (let player of playerData) {
-            inTable(team);
+            inModal(team);
         }
 
     });
@@ -74,7 +74,7 @@ function inModal(data) {
         contInner.innerHTML = player;
         console.log(team);
         container.appendChild(contInner);
-        }
+    }
     
 }
 
