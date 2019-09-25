@@ -72,7 +72,7 @@ function inModal(data) {
         contInner.attributes.setNamedItem(typ)
         
         contInner.innerHTML = player;
-        console.log(team);
+        console.log(player);
         container.appendChild(contInner);
     }
     
