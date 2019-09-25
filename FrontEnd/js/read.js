@@ -52,7 +52,8 @@ function readPlayers() {
 function inModal(data) {
     let div = document.getElementById("playerList");
     let contInner;
-
+    let container = document.createElement("div");
+    div.appendChild(container);
     let players;
     let playersValues = [];
     players = [];
@@ -73,7 +74,7 @@ function inModal(data) {
         
         contInner.innerHTML = player;
         console.log(player);
-        div.appendChild(contInner);
+        container.appendChild(contInner);
     }
     
 }
