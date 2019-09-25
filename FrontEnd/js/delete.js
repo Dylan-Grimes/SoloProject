@@ -1,4 +1,4 @@
-function deletePet() {
+function deleteTeam() {
 
     var input = document.getElementById("idToDelete").value;
 

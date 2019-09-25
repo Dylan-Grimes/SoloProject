@@ -1,6 +1,6 @@
 const formDataObj = {};
 
-function addPet(data) {
+function addTeam(data) {
 
     for (let element of data) {
         if (element.name) {
