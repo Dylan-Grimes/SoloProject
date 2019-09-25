@@ -41,10 +41,10 @@ function inTable(data) {
     for (let team of data) {
         tableBody.appendChild(container);
         contInner = document.createElement("td");
-
+        contInner.innerHTML = team;
+        let tagName = document.createAttribute("name");
         for (let key in team) {
-            contInner.innerHTML = team;
-            let tagName = document.createAttribute("name");
+
             tagName.value = key;
             contInner.setAttributeNode(tagName);
             container.appendChild(contInner);
