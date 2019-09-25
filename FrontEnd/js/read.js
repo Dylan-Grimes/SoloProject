@@ -43,7 +43,7 @@ function inTable(data) {
         contInner.innerHTML = team;
 
         let tagName = document.createAttribute("name");
-        tagName.value = team.id;
+        tagName.value = team.value;
         contInner.setAttributeNode(tagName);
 
         container.appendChild(contInner);
