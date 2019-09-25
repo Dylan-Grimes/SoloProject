@@ -41,13 +41,12 @@ function inTable(data) {
     for (let team of data) {
         contInner = document.createElement("td");
         contInner.innerHTML = team;
-
+        for (let key in team) {
         let tagName = document.createAttribute("name");
-
-
-        container.appendChild(contInner);
-        tagName = team.value.id;
+        tagName.value = key;
         contInner.setAttributeNode(tagName);
+        }
+        container.appendChild(contInner);
     }
 
 }
