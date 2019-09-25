@@ -37,6 +37,21 @@
       </table>
     </div>
 
+      <div class="col-5">
+          <div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Add a Team</button>
+          </div>
+          <br>
+          <div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateFunctionality">Update a Team</button>
+          </div>
+          <br>
+          <div>
+              <input type="number" class="form-control col-2" id="idToDelete" placeholder="ID">
+              <button type="button" class="btn btn-primary" onclick=deleteTeam()>Delete a Team by ID</button>
+          </div>
+      </div>
+
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
