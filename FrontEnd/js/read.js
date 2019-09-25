@@ -34,21 +34,21 @@ function readTeams() {
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
-    console.log("data" + data);
-    console.log("data2" + data.value);
+    console.log("data" , data);
+    console.log("data2" , data.value);
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
     for (let team in data) {
         contInner = document.createElement("td");
-        console.log("tst1" + team);
-        console.log("tst2" + team.value);
+        console.log("tst1" , team);
+        console.log("tst2" , team.value);
         for (let key in team ) {
 
             contInner.innerHTML = team.value;
             let tagName = document.createAttribute("name");
-            console.log("team "+ team);
+            console.log("team " , team);
             tagName.value = team;
             contInner.setAttributeNode(tagName);
             container.appendChild(contInner);
