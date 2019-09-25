@@ -65,12 +65,6 @@ function inTable(data) {
         container.appendChild(contInner);
     }
 
-
-  
-    
-}
-
-function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("tableBody");
     switching = true;
@@ -93,4 +87,9 @@ function sortTable() {
         // Each time a switch is done, increase this count by 1:
         switchcount ++;
       } 
+
+
+  
+    
 }
+
