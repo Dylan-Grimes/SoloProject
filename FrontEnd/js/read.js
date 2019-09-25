@@ -30,6 +30,38 @@ function readTeams() {
     });
 }
 
+function readPlayers() {
+
+    makeRequest("http://34.89.70.8:9000/players").then((data) => {
+        console.log(data);
+
+        let playerData = JSON.parse(data);
+
+        console.log(playerData);
+
+        let teamInfo = [];
+        let teams;
+
+        // for (let p of teamData) {
+        //     teams = [];
+
+        //     teams.push(p.id);
+        //     teams.push(p.teamName);
+        //     teams.push(p.teamRating);
+
+
+        //     teamInfo.push(teams);
+
+        //     console.log(teams);
+        // }
+
+        // for (let team of teamData) {
+        //     inTable(team);
+        // }
+
+    });
+}
+
 
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
