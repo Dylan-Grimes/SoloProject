@@ -56,6 +56,7 @@ function inTable(data) {
         container.appendChild(contInner);
 
     }
+
     for (let pair in data) {
 
         let tagName = document.createAttribute("name");
@@ -63,9 +64,6 @@ function inTable(data) {
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
  
-
-
     }
-    
-
+    container.appendChild(contInner);
 }
