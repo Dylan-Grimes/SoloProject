@@ -64,6 +64,23 @@ function inTable(data) {
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
     }
+
+    function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("tableBody");
+        switching = true;
+        while (switching) {
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("teamName")[0];
+                y = rows[i + 1].getElementsByTagName("teamName")[0];
+                if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+    }
   
     
 }
