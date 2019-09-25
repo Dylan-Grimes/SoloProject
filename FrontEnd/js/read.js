@@ -50,10 +50,11 @@ function inTable(data) {
     console.log(teams);
 
     for (let member of teams) {
-        for (let pair in data) {
         contInner = document.createElement("td");
         contInner.innerHTML = member;
         container.appendChild(contInner);
+        for (let pair in data) {
+
 
 
             let tagName = document.createAttribute("name");
@@ -62,6 +63,7 @@ function inTable(data) {
             contInner.setAttributeNode(tagName);
             container.appendChild(contInner);
         }
+
     }
 
 
