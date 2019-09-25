@@ -87,8 +87,13 @@ function inTable(data) {
         var typ = document.createAttribute("data-toggle");
         typ.value = "modal";
         contInner.attributes.setNamedItem(typ)
-        var typ2 = document.createAttribute("data-target");
-        typ2.value = "#playerModal";
+
+        var typ1 = document.createAttribute("data-target");
+        typ1.value = "#playerModal";
+        contInner.attributes.setNamedItem(typ1)
+
+        var typ2 = document.createAttribute("onclick");
+        typ2.value = readPlayers();
         contInner.attributes.setNamedItem(typ2)
         
         
