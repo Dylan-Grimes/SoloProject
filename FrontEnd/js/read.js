@@ -66,7 +66,7 @@ function inTable(data) {
     }
 
     var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("tableBody");
+    table = document.getElementById("teamTable");
     switching = true;
     while (switching) {
         for (i = 1; i < (rows.length - 1); i++) {
