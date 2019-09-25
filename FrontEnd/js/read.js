@@ -48,13 +48,13 @@ function inTable(data) {
 
     teamsValues.push(teams);
     console.log(teams);
-
+    for (let pair in data) {
     for (let member of teams) {
         contInner = document.createElement("td");
         contInner.innerHTML = member;
         container.appendChild(contInner);
 
-        for (let pair in data) {
+
             let tagName = document.createAttribute("name");
 
             tagName.value = pair;
