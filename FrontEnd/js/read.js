@@ -34,7 +34,6 @@ function readTeams() {
 function inTable(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
-    console.log(data, data.teamName);
 
     let container = document.createElement("tr");
     tableBody.appendChild(container);
@@ -50,13 +49,17 @@ function inTable(data) {
     teamsValues.push(teams);
     console.log(teams);
 
+    for (let member of teams) {
+        contInner = document.createElement("td");
+        contInner.innerHTML = member;
+        container.appendChild(contInner);
+    }
+
+
     for (let pair in data) {
         contInner = document.createElement("td");
         console.log(pair)
 
-
-
-            contInner.innerHTML = key;
             let tagName = document.createAttribute("name");
 
             tagName.value = pair;
