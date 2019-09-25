@@ -50,7 +50,7 @@ function inTable(data) {
     console.log(teams);
 
     for (let team of teams) {
-        for (let key of data) {
+        for (let key in data) {
         contInner = document.createElement("td");
         contInner.innerHTML = team;
         console.log(team);
