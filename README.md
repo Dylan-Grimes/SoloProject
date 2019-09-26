@@ -69,7 +69,6 @@ Building the frontend was done using Jenkins with a GitHub webhook, both the fro
 ### Wireframes
 Pages
 ![Teams Wireframe](/Documentation/pageWireframe.PNG)
-Routines
 
 
 ## Final Appearance
