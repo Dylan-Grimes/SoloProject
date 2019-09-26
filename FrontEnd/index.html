@@ -16,23 +16,21 @@
 
 </head>
 
-<body onload="readTeams(), readPlayers(), sortTable(teamTable)">
+<body onload="readTeams(), sortTable(teamTable)">
 
 <div class="jumbotron">
   <h1 class="display-4 center">Counter-Strike Leaderboards</h1>
   <h2 class="display-4 center">Teams</h2>
 </div>
 
-<div class="col-5">
+<div class="flex"> 
   <div>
       <button type="button" class="btn btn-primary" onclick=location.href="players.html">Players</button>
   </div>
-
-  <div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Add a Team</button>
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateFunctionality">Update a Team</button>
       <input type="number" class="form-control col-2" id="idToDelete" placeholder="ID">
       <button type="button" class="btn btn-primary" onclick=deleteTeam()>Delete a Team by ID</button>
-  </div>
 </div>
 
   <div class="flex" id="wrapper">
