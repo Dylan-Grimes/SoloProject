@@ -137,8 +137,8 @@ function inTablePlayer(data) {
 
     players.push(data.id);
     players.push(data.playerName);
-    players.push(data.playerRole);
     players.push(data.playerTeam);
+    players.push(data.playerRole);
     players.push(data.playerRating);
 
     playerValues.push(players);
