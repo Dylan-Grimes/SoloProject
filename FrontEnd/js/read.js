@@ -166,8 +166,8 @@ function inTablePlayer(data) {
         contInner.attributes.setNamedItem(typ1)
         
         
-        contInner.innerHTML = team;
-        console.log(team);
+        contInner.innerHTML = player;
+        console.log(player);
         container.appendChild(contInner);
         }
         for (let key in data) {
