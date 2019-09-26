@@ -179,8 +179,8 @@ function sortTableTeam(table) {
         console.log(rows.length);
         for (i = 1; i < rows.length - 1; i++) {
             shouldSwitch = false;
-            x = rows[i].getElementsByTagName("TD")["teamRating"];
-            y = rows[i + 1].getElementsByTagName("TD")["teamRating"];
+            x = rows[i].getElementsByTagName("TD")["teamName"];
+            y = rows[i + 1].getElementsByTagName("TD")["teamName"];
             if (Number(x.innerHTML) < Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
