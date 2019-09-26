@@ -19,7 +19,7 @@ function submitUpdateForm(formData) {
         .then((data) => {
             console.log("it Worked!" + data);
 
-            $('#updateFunctionality').modal('hide');
+            $('#updateFunctionalityTeams').modal('hide');
             $('.modal').on('hidden.bs.modal', function () {
                 $(this).find('form')[0].reset();
             });
@@ -54,7 +54,7 @@ function submitUpdateFormPlayers(formData) {
         .then((data) => {
             console.log("it Worked!" + data);
 
-            $('#updateFunctionality').modal('hide');
+            $('#updateFunctionalityPlayers').modal('hide');
             $('.modal').on('hidden.bs.modal', function () {
                 $(this).find('form')[0].reset();
             });
