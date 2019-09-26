@@ -179,8 +179,8 @@ function sortTableTeam(table) {
         console.log(rows.length);
         for (i = 1; i < rows.length - 1; i++) {
             shouldSwitch = false;
-            x = rows[i].getElementsByTagName("TD")["teamName"];
-            y = rows[i + 1].getElementsByTagName("TD")["teamName"];
+            x = rows[i].getElementsByTagName("TD")["teamRating"];
+            y = rows[i + 1].getElementsByTagName("TD")["teamRating"];
             if (Number(x.innerHTML) < Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
@@ -204,8 +204,8 @@ function sortTablePlayer(table) {
         console.log(rows.length);
         for (i = 1; i < rows.length - 1; i++) {
             shouldSwitch = false;
-            x = rows[i].getElementsByTagName("TD")["playerName"];
-            y = rows[i + 1].getElementsByTagName("TD")["playerName"];
+            x = rows[i].getElementsByTagName("TD")["playerRole"];
+            y = rows[i + 1].getElementsByTagName("TD")["playerRole"];
             if (Number(x.innerHTML) < Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
