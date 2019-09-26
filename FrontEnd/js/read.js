@@ -176,7 +176,7 @@ let rows, switching, i, x, y, shouldSwitch;
     while (switching) {
         switching = false;
         rows = table.rows;
-
+        console.log(rows.length);
         for (i = 1; i < rows.length - 1; i++) {
             shouldSwitch = false;
             x = rows[i].getElementsByTagName("TD")["teamName"];
