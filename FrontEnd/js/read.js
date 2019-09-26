@@ -39,13 +39,26 @@ function readPlayers() {
 
         console.log(playerData);
 
-        let teamInfo = [];
-        let teams;
+        let playerInfo = [];
+        let players;
+        for (let p of playerData) {
+            players = [];
+
+            players.push(p.id);
+            players.push(p.playerName);
+            players.push(p.playerRating);
+            players.push(p.playerRole);
+
+
+            teamInfo.push(players);
+
+            console.log(players);
+        }
 
         for (let player of playerData) {
             inTable(player);
         }
-        sortTable(teamPlayer);
+        //sortTable(teamPlayer);
 
     });
 }
@@ -121,14 +134,9 @@ function inTable(data) {
         tagName.value = key;
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
-    }
-
-    
-
-
-  
-    
+    }   
 }
+
 function sortTable(table) {
 let rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("teamTable");
