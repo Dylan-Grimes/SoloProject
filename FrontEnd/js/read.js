@@ -106,7 +106,7 @@ function inTableTeam(data) {
         contInner.attributes.setNamedItem(typ)
 
         var typ1 = document.createAttribute("data-target");
-        typ1.value = "#updateFunctionality";
+        typ1.value = "#updateFunctionalityTeams";
         contInner.attributes.setNamedItem(typ1)
 
 
@@ -152,7 +152,7 @@ function inTablePlayer(data) {
         contInner.attributes.setNamedItem(typ)
 
         var typ1 = document.createAttribute("data-target");
-        typ1.value = "#updateFunctionality";
+        typ1.value = "#updateFunctionalityPlayers";
         contInner.attributes.setNamedItem(typ1)
 
 
