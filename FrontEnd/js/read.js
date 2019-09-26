@@ -24,7 +24,7 @@ function readTeams() {
         }
 
         for (let team of teamData) {
-            inTable(team);
+            inTableTeam(team);
         }
 
     });
@@ -39,24 +39,10 @@ function readPlayers() {
 
         console.log(playerData);
 
-        let playerInfo = [];
-        let players;
-        for (let p of playerData) {
-            players = [];
 
-            players.push(p.id);
-            players.push(p.playerName);
-            players.push(p.playerRating);
-            players.push(p.playerRole);
-
-
-            playerInfo.push(players);
-
-            console.log(players);
-        }
 
         for (let player of playerData) {
-            inTable(player);
+            inTablePlayer(player);
         }
         //sortTable(teamPlayer);
 
@@ -94,7 +80,7 @@ function inModal(data) {
 }
 
 
-function inTable(data) {
+function inTableTeam(data) {
     let tableBody = document.getElementById("tableBody");
     let contInner;
 
@@ -113,6 +99,62 @@ function inTable(data) {
     console.log(teams);
 
     for (let team of teams) {
+        contInner = document.createElement("td");
+
+        var typ = document.createAttribute("data-toggle");
+        typ.value = "modal";
+        contInner.attributes.setNamedItem(typ)
+
+        var typ1 = document.createAttribute("data-target");
+        typ1.value = "#updateFunctionality";
+        contInner.attributes.setNamedItem(typ1)
+        
+        
+        contInner.innerHTML = team;
+        console.log(team);
+        container.appendChild(contInner);
+        }
+        for (let key in data) {
+        console.log(key);
+        let tagName = document.createAttribute("name");
+        tagName.value = key;
+        contInner.setAttributeNode(tagName);
+        container.appendChild(contInner);
+    }   
+}
+
+function inTablePlayer(data) {
+    let tableBody = document.getElementById("tableBody");
+    let contInner;
+
+    let container = document.createElement("tr");
+    tableBody.appendChild(container);
+
+    let teams;
+    let teamsValues = [];
+    teams = [];
+
+    teams.push(data.id);
+    teams.push(data.teamName);
+    teams.push(data.teamRating);
+
+    teamsValues.push(teams);
+    console.log(teams);
+
+    let playerValues = [];
+    let players;
+
+    players = [];
+
+    players.push(data.id);
+    players.push(data.playerName);
+    players.push(data.playerRating);
+    players.push(data.playerRole);
+
+    playerValues.push(players);
+    console.log(players);
+
+    for (let player of players) {
         contInner = document.createElement("td");
 
         var typ = document.createAttribute("data-toggle");
