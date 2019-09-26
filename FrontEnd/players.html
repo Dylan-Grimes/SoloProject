@@ -47,7 +47,7 @@
     </div>
 
 
-
+    <!-- Add player functionality Modal -->
     <div class="modal fade" id="addPlayerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <!-- Update functionality Modal -->
+    <!-- Update player functionality Modal -->
     <div class="modal fade" id="updateFunctionality" tabindex="-1" role="dialog" aria-labelledby="updateFunctionalityTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -114,171 +114,9 @@
       </div>
     </div>
 
-<!--    &lt;!&ndash; read Players functionality Modal &ndash;&gt;-->
-<!--    <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="updateFunctionalityTitle" aria-hidden="true">-->
-<!--      <div class="modal-dialog modal-dialog-centered" role="document">-->
-<!--        <div class="modal-content">-->
-<!--          <div class="modal-header">-->
-<!--            <h5 class="modal-title" id="readPFunctionalityTitle">Team</h5>-->
-<!--            <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--              <span aria-hidden="true">&times;</span>-->
-<!--            </button>-->
-<!--          </div>-->
-<!--          <div class="modal-body">-->
-<!--            <form >-->
-<!--              <div class="form-group" id="playerList">-->
-
-<!--                <div class="modal-footer">-->
-<!--                    <div>-->
-<!--                        <input type="number" class="form-control col-2" id="idToDelete" placeholder="ID">-->
-<!--                        <button type="button" class="btn btn-primary" onclick=deleteTeam()>Delete a Team by ID</button>-->
-<!--                    </div>-->
-<!--                  <input type="submit" class="btn btn-primary" value="Submit">-->
-<!--                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--      <div class="container-fluid">-->
-<!--        <button class="btn btn-primary btn-lg btn-block" data-toggle="collapse" href="#collapseTeamTable" role="button" aria-haspopup="true"-->
-<!--          aria-controls="collapseTeamTable">Show Teams</button>-->
-<!--        <table class="table table-hover table-bordered collapse multi-collapse" id="collapseTeamTable">-->
-<!--          <thead>-->
-<!--            <tr>-->
-<!--              <th scope="col"></th>-->
-<!--              <th scope="col">Rating</th>-->
-<!--              <th scope="col">Rounds</th>-->
-<!--              <th scope="col">Games</th>-->
-<!--            </tr>-->
-<!--          </thead>-->
-<!--          <tbody>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--            <tr data-toggle="collapse" href="#multiCollapseExample8" role="button" aria-expanded="false" aria-controls="multiCollapseExample8">-->
-<!--              <th scope="row">teamName</th>-->
-<!--              <td>1.0</td>-->
-<!--              <td>+10</td>-->
-<!--              <td>+5</td>-->
-<!--            </tr>-->
-<!--          </tbody>-->
-<!--        </table>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample1">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample2">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player2</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample3">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player3</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample4">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player4</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample5">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player5</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample6">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player5</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample7">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player5</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--        <div class="collapse multi-collapse" id="multiCollapseExample8">-->
-<!--          <ul class="list-group">-->
-<!--            <li class="list-group-item">Player5</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--            <li class="list-group-item">Player1</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash; /#page-content-wrapper &ndash;&gt;-->
 
   </div>
-<!--  &lt;!&ndash; /#wrapper &ndash;&gt;-->
 
-  <!-- Bootstrap core JavaScript -->
   <script src="/js/makerequests.js"></script>
   <script src="/js/create.js"></script>
   <script src="/js/delete.js"></script>
