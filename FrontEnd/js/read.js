@@ -181,7 +181,7 @@ let rows, switching, i, x, y, shouldSwitch;
             shouldSwitch = false;
             x = rows[i].getElementsByTagName("TD")["teamName"];
             y = rows[i + 1].getElementsByTagName("TD")["teamName"];
-            if (Number(x.innerHTML) > Number(y.innerHTML)) {
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
             }
