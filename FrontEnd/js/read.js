@@ -43,9 +43,9 @@ function readPlayers() {
         let teams;
 
         for (let player of playerData) {
-            inModal(player);
+            inTable(player);
         }
-        sortTable(teamTable);
+        sortTable(teamPlayer);
 
     });
 }
