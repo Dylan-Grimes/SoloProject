@@ -40,7 +40,7 @@
           <th>Role</th>
         </tr>
         </thead>
-        <tbody id="tableBody">
+        <tbody id="tableBodyPlayers">
         </tbody>
       </table>
     </div>
@@ -62,9 +62,11 @@
                 <label for="recipient-name" class="col-form-label">Name:</label>
                 <input name="playerName" type="text" class="form-control" id="inputName">
                 <label for="recipient-name" class="col-form-label">Rating:</label>
-                <input name="playerRating" type="text" class="form-control" id="inputType">
+                <input name="playerRating" type="text" class="form-control" id="inputRating">
                 <label for="recipient-name" class="col-form-label">Role:</label>
-                <input name="playerRole" type="text" class="form-control" id="inputType">
+                <input name="playerRole" type="text" class="form-control" id="inputRole">
+                <label for="recipient-name" class="col-form-label">Team:</label>
+                <input name="playerTeam" type="text" class="form-control" id="inputTeam">
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   <input type="submit" class="btn btn-primary" value="Submit">
@@ -90,12 +92,14 @@
           <div class="modal-body">
             <form onsubmit="return submitUpdateForm(this)">
               <div class="form-group">
-                <label for="recipient-name" class="col-form-label">ID</label>
-                <input name="id" type="number" class="form-control" id="inputUpdateId">
                 <label for="recipient-name" class="col-form-label">Name:</label>
-                <input name="teamName" type="text" class="form-control" id="inputUpdateName">
-                <label for="recipient-name" class="col-form-label">Ranking:</label>
-                <input name="teamRating" type="text" class="form-control" id="inputUpdateRating">
+                <input name="playerName" type="text" class="form-control" id="inputUpdateName">
+                <label for="recipient-name" class="col-form-label">Rating:</label>
+                <input name="playerRating" type="text" class="form-control" id="inputUpdateRating">
+                <label for="recipient-name" class="col-form-label">Role:</label>
+                <input name="playerRole" type="text" class="form-control" id="inputUpdateRole">
+                <label for="recipient-name" class="col-form-label">Team:</label>
+                <input name="playerTeam" type="text" class="form-control" id="inputUpdateTeam">
                 <div class="modal-footer">
                     <input type="number" class="form-control left col-2" id="idToDeleteP" placeholder="ID">
                     <button type="button" class="btn btn-danger left" onclick=deletePlayer()>Delete a Player by ID</button>

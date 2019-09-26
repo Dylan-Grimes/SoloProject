@@ -124,7 +124,7 @@ function inTableTeam(data) {
 }
 
 function inTablePlayer(data) {
-    let tableBody = document.getElementById("tableBody");
+    let tableBody = document.getElementById("tableBodyPlayers");
     let contInner;
 
     let container = document.createElement("tr");
