@@ -71,12 +71,12 @@ function inModal(data) {
         var typ = document.createAttribute("class");
         typ.value = "col-form-label";
         contInner.attributes.setNamedItem(typ)
-        
+
         contInner.innerHTML = player;
         console.log(player);
         container.appendChild(contInner);
     }
-    
+
 }
 
 
@@ -108,19 +108,19 @@ function inTableTeam(data) {
         var typ1 = document.createAttribute("data-target");
         typ1.value = "#updateFunctionality";
         contInner.attributes.setNamedItem(typ1)
-        
-        
+
+
         contInner.innerHTML = team;
-        console.log(team);
+
         container.appendChild(contInner);
-        }
-        for (let key in data) {
-        console.log(key);
+    }
+    for (let key in data) {
+
         let tagName = document.createAttribute("name");
         tagName.value = key;
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
-    }   
+    }
 }
 
 function inTablePlayer(data) {
@@ -154,23 +154,23 @@ function inTablePlayer(data) {
         var typ1 = document.createAttribute("data-target");
         typ1.value = "#updateFunctionality";
         contInner.attributes.setNamedItem(typ1)
-        
-        
+
+
         contInner.innerHTML = player;
-        console.log(player);
+
         container.appendChild(contInner);
-        }
-        for (let key in data) {
-        console.log(key);
+    }
+    for (let key in data) {
+
         let tagName = document.createAttribute("name");
         tagName.value = key;
         contInner.setAttributeNode(tagName);
         container.appendChild(contInner);
-    }   
+    }
 }
 
 function sortTable(table) {
-let rows, switching, i, x, y, shouldSwitch;
+    let rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("teamTable");
     switching = true;
     while (switching) {
@@ -186,9 +186,10 @@ let rows, switching, i, x, y, shouldSwitch;
                 break;
             }
         }
+
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
     }
-    if (shouldSwitch) {
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-    } 
 }
