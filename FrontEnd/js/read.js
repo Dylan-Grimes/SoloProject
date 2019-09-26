@@ -107,12 +107,8 @@ function inTable(data) {
         contInner.attributes.setNamedItem(typ)
 
         var typ1 = document.createAttribute("data-target");
-        typ1.value = "#playerModal";
+        typ1.value = "#updateFunctionality";
         contInner.attributes.setNamedItem(typ1)
-
-        var typ2 = document.createAttribute("onclick");
-        typ2.value = "readPlayers()";
-        contInner.attributes.setNamedItem(typ2)
         
         
         contInner.innerHTML = team;
