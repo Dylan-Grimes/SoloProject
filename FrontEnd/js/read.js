@@ -50,7 +50,7 @@ function readPlayers() {
             players.push(p.playerRole);
 
 
-            teamInfo.push(players);
+            playerInfo.push(players);
 
             console.log(players);
         }
