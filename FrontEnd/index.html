@@ -60,10 +60,10 @@
                 <label for="recipient-name" class="col-form-label">Name:</label>
                 <input name="teamName" type="text" class="form-control" id="inputName">
                 <label for="recipient-name" class="col-form-label">Ranking:</label>
-                <input name="teamRating" type="text" class="form-control" id="inputType">
+                <input name="teamRating" type="text" class="form-control" id="inputRating">
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <input type="submit" class="btn btn-primary" value="Submit">
+                  <input type="submit" class="btn btn-primary" value="Submit" id="addTeamSubmit">
                 </div>
               </div>
             </form>
@@ -94,9 +94,9 @@
                 <input name="teamRating" type="text" class="form-control" id="inputUpdateRating">
                 <div class="modal-footer">
                   <input type="number" class="form-control left col-2" id="idToDelete" placeholder="ID">
-                  <button type="button" class="btn btn-danger left" onclick=deleteTeam()>Delete a Team by ID</button>
-                  <input type="submit" class="btn btn-primary" value="Submit">
+                  <button type="button" class="btn btn-danger left" onclick=deleteTeam() id="deleteTeamSubmit">Delete a Team by ID</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <input type="submit" class="btn btn-primary" value="Submit" id="updateTeamSubmit">
                 </div>
               </div>
             </form>

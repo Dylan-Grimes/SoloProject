@@ -71,7 +71,7 @@
                 <input name="playerRole" type="text" class="form-control" id="inputRole">
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <input type="submit" class="btn btn-primary" value="Submit">
+                  <input type="submit" class="btn btn-primary" value="Submit" id="addPlayerSubmit">
                 </div>
               </div>
             </form>
@@ -105,10 +105,10 @@
                 <label for="recipient-name" class="col-form-label">Role:</label>
                 <input name="playerRole" type="text" class="form-control" id="inputUpdateRole">
                 <div class="modal-footer">
-                    <input type="number" class="form-control left col-2" id="idToDeleteP" placeholder="ID">
-                    <button type="button" class="btn btn-danger left" onclick=deletePlayer()>Delete a Player by ID</button>
-                  <input type="submit" class="btn btn-primary" value="Submit">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <input type="number" class="form-control left col-2" id="idToDeletePlayer" placeholder="ID">
+                  <button type="button" class="btn btn-danger left" onclick=deletePlayer() id="deletePlayerSubmit">Delete a Player by ID</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+                  <input type="submit" class="btn btn-primary" value="Submit" id="updatePlayerSubmit">
                 </div>
               </div>
             </form>
