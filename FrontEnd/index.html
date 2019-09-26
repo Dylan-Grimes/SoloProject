@@ -16,7 +16,7 @@
 
 </head>
 
-<body onload="readTeams(), sortTable(teamTable)">
+<body onload="readTeams()">
 
 <div class="jumbotron">
   <h1 class="display-4 center">Counter-Strike Leaderboards</h1>
@@ -31,7 +31,7 @@
 
   <div class="flex" id="wrapper">
     <div style="padding-top:20px;padding-left:10px;padding-right:10px;">
-      <table id=teamTable class="table table-bordered table-striped table-hover table-dark">
+      <table id=teamTable onload="sortTable(teamTable)" class="table table-bordered table-striped table-hover table-dark">
         <thead>
         <tr>
           <th>ID</th>
