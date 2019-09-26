@@ -1,6 +1,6 @@
 # Counter-Strike leaderboards
 
-In fulfilment of the solo project assignment due Monday week 7 at QA consulting.
+In fulfilment of the solo project assignment at QA consulting.
 
 ## Index
 [Brief](#brief)
@@ -37,7 +37,7 @@ Currently teams and players are not linked.
 <a name="testing"></a>
 ## Testing
 
-Test coverage for the backend is at 0%, due to me being unable to run my backend on IntelliJ. However, i have JUnit tests there that should cover all classes in the backend. Selenium tests have been created for the frontend and cover all elements.
+Test coverage for the backend is at 0% due to me being unable to run my backend on IntelliJ. However, I have JUnit tests there that should cover all classes in the backend. Selenium tests have been created for the frontend and cover all elements.
 Codacy was used to review the code quality.
 * Codacy Tests
 	* [Front end Tests](https://app.codacy.com/manual/Dylan-Grimes/SoloProject/dashboard)
