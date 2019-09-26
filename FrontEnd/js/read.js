@@ -177,7 +177,7 @@ let rows, switching, i, x, y, shouldSwitch;
         switching = false;
         rows = table.rows;
 
-        for (i = 1; i < (rows.length - 1); i++) {
+        for (i = 1; i < rows.length - 1; i++) {
             shouldSwitch = false;
             x = rows[i].getElementsByTagName("TD")["teamName"];
             y = rows[i + 1].getElementsByTagName("TD")["teamName"];
