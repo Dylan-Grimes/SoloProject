@@ -22,7 +22,7 @@
   <h2 class="display-4 center">Teams</h2>
   <div class = "container"> 
       <button id="playersPageRef"type="button" class="btn btn-secondary col-2" onclick=location.href="players.html">Players</button>
-      <button id="AddTeamButton" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">Add a Team</button>
+      <button id="addTeamButton" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">Add a Team</button>
       <button id="sortTeamButton" type="button" class="btn btn-secondary" onclick="sortTableTeam('teamTable')">Sort</button>
 </div>
 </div>
@@ -93,7 +93,7 @@
                 <label for="recipient-name" class="col-form-label">Ranking:</label>
                 <input name="teamRating" type="text" class="form-control" id="inputUpdateRating">
                 <div class="modal-footer">
-                  <input type="number" class="form-control left col-2" id="idToDelete" placeholder="ID">
+                  <input type="number" class="form-control left col-2" id="idToDeleteTeam" placeholder="ID">
                   <button type="button" class="btn btn-danger left" onclick=deleteTeam() id="deleteTeamSubmit">Delete a Team by ID</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   <input type="submit" class="btn btn-primary" value="Submit" id="updateTeamSubmit">

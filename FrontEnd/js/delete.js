@@ -1,6 +1,6 @@
 function deleteTeam() {
 
-    var input = document.getElementById("idToDelete").value;
+    var input = document.getElementById("idToDeleteTeam").value;
 
     console.log(input);
 
@@ -19,7 +19,7 @@ function deleteTeam() {
 
 function deletePlayer() {
 
-    var input = document.getElementById("idToDeleteP").value;
+    var input = document.getElementById("idToDeletePlayer").value;
 
     console.log(input);
 
