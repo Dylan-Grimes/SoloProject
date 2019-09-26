@@ -196,7 +196,7 @@ function sortTableTeam(table) {
 
 function sortTablePlayer(table) {
     let rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("teamTable");
+    table = document.getElementById("playerTable");
     switching = true;
     while (switching) {
         switching = false;
