@@ -130,17 +130,6 @@ function inTablePlayer(data) {
     let container = document.createElement("tr");
     tableBody.appendChild(container);
 
-    let teams;
-    let teamsValues = [];
-    teams = [];
-
-    teams.push(data.id);
-    teams.push(data.teamName);
-    teams.push(data.teamRating);
-
-    teamsValues.push(teams);
-    console.log(teams);
-
     let playerValues = [];
     let players;
 
@@ -150,6 +139,7 @@ function inTablePlayer(data) {
     players.push(data.playerName);
     players.push(data.playerRating);
     players.push(data.playerRole);
+    players.push(data.playerTeam);
 
     playerValues.push(players);
     console.log(players);
