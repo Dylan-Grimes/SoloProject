@@ -11,24 +11,25 @@
   <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-  <!-- Custom styles for this template -->
   <link href="/css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
-<body onload="readPlayers(), sortTable(playerTable)">
+<body onload="readPlayers()">
 
 <div class="jumbotron">
   <h1 class="display-4 center">Counter-Strike Leaderboards</h1>
   <h2 class="display-4 center">Players</h2>
   <div class = "container"> 
-        <button type="button" class="btn btn-secondary col-2" onclick=location.href="index.html">teams</button>
-        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addPlayerModal">Add a Player</button>
+        <button id="teamsPageRef" type="button" class="btn btn-secondary col-2" onclick=location.href="index.html">teams</button>
+        <button id="addPlayerButton" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addPlayerModal">Add a Player</button>
+        <button id="sortPlayerButton" type="button" class="btn btn-secondary" onclick="sortTablePlayer('playerTable')">Sort</button>
   </div>
+  
 
 </div>
 
-
+<!--player table-->
   <div class="flex" id="wrapper">
     <div style="padding-top:20px;padding-left:10px;padding-right:10px;">
       <table id=playerTable class="table table-bordered table-striped table-hover table-dark">
@@ -36,9 +37,9 @@
         <tr>
           <th>ID</th>
           <th>Name</th>
-          <th>Rating</th>
-          <th>Role</th>
           <th>Team</th>
+          <th>Role</th>
+          <th>Rating</th>
         </tr>
         </thead>
         <tbody id="tableBodyPlayers">
@@ -70,7 +71,7 @@
                 <input name="playerRole" type="text" class="form-control" id="inputRole">
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <input type="submit" class="btn btn-primary" value="Submit">
+                  <input type="submit" class="btn btn-primary" value="Submit" id="addPlayerSubmit">
                 </div>
               </div>
             </form>
@@ -81,11 +82,11 @@
     </div>
 
     <!-- Update player functionality Modal -->
-    <div class="modal fade" id="updateFunctionality" tabindex="-1" role="dialog" aria-labelledby="updateFunctionalityTitle" aria-hidden="true">
+    <div class="modal fade" id="updateFunctionalityPlayers" tabindex="-1" role="dialog" aria-labelledby="updateFunctionalityTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="updateFunctionalityTitle">Update a Team</h5>
+            <h5 class="modal-title" id="updateFunctionalityTitle">Update a Player</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -93,6 +94,8 @@
           <div class="modal-body">
             <form onsubmit="return submitUpdateForm(this)">
               <div class="form-group">
+                <label for="recipient-name" class="col-form-label">ID:</label>
+                <input name="id" type="number" class="form-control" id="inputUpdateId">
                 <label for="recipient-name" class="col-form-label">Name:</label>
                 <input name="playerName" type="text" class="form-control" id="inputUpdateName">
                 <label for="recipient-name" class="col-form-label">Team:</label>
@@ -102,10 +105,10 @@
                 <label for="recipient-name" class="col-form-label">Role:</label>
                 <input name="playerRole" type="text" class="form-control" id="inputUpdateRole">
                 <div class="modal-footer">
-                    <input type="number" class="form-control left col-2" id="idToDeleteP" placeholder="ID">
-                    <button type="button" class="btn btn-danger left" onclick=deletePlayer()>Delete a Player by ID</button>
-                  <input type="submit" class="btn btn-primary" value="Submit">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <input type="number" class="form-control left col-2" id="idToDeletePlayer" placeholder="ID">
+                  <button type="button" class="btn btn-danger left" onclick=deletePlayer() id="deletePlayerSubmit">Delete a Player by ID</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+                  <input type="submit" class="btn btn-primary" value="Submit" id="updatePlayerSubmit">
                 </div>
               </div>
             </form>

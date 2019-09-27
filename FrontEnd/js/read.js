@@ -106,7 +106,7 @@ function inTableTeam(data) {
         contInner.attributes.setNamedItem(typ)
 
         var typ1 = document.createAttribute("data-target");
-        typ1.value = "#updateFunctionality";
+        typ1.value = "#updateFunctionalityTeams";
         contInner.attributes.setNamedItem(typ1)
 
 
@@ -137,9 +137,9 @@ function inTablePlayer(data) {
 
     players.push(data.id);
     players.push(data.playerName);
-    players.push(data.playerRating);
-    players.push(data.playerRole);
     players.push(data.playerTeam);
+    players.push(data.playerRole);
+    players.push(data.playerRating);
 
     playerValues.push(players);
     console.log(players);
@@ -152,7 +152,7 @@ function inTablePlayer(data) {
         contInner.attributes.setNamedItem(typ)
 
         var typ1 = document.createAttribute("data-target");
-        typ1.value = "#updateFunctionality";
+        typ1.value = "#updateFunctionalityPlayers";
         contInner.attributes.setNamedItem(typ1)
 
 
@@ -169,7 +169,7 @@ function inTablePlayer(data) {
     }
 }
 
-function sortTable(table) {
+function sortTableTeam(table) {
     let rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("teamTable");
     switching = true;
@@ -181,6 +181,31 @@ function sortTable(table) {
             shouldSwitch = false;
             x = rows[i].getElementsByTagName("TD")["teamName"];
             y = rows[i + 1].getElementsByTagName("TD")["teamName"];
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                shouldSwitch = true;
+                break;
+            }
+        }
+
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+        }
+    }
+}
+
+function sortTablePlayer(table) {
+    let rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("playerTable");
+    switching = true;
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        console.log(rows.length);
+        for (i = 1; i < rows.length - 1; i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")["playerRole"];
+            y = rows[i + 1].getElementsByTagName("TD")["playerRole"];
             if (Number(x.innerHTML) < Number(y.innerHTML)) {
                 shouldSwitch = true;
                 break;
