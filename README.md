@@ -68,23 +68,22 @@ Building the frontend was done using Jenkins with a GitHub webhook, both the fro
 <a name="FE"></a>
 ## Front End Design
 ### Wireframes
-Pages
-![Teams Wireframe](/Documentation/pageWireframe.PNG)
+![Wireframes](/Documentation/pageWireframe.PNG)
 
 
 ## Final Appearance
 ### Team Leaderboard
-![Team Leaderboard](/Documentation/teamPage.png)
+![Team Leaderboard](/Documentation/teamPage.PNG)
 ### Player Leaderboard
-![Player Leaderboard](/Documentation/PlayerPage.png)
+![Player Leaderboard](/Documentation/PlayerPage.PNG)
 ### Add Team
-![Add Team](/Documentation/addTeamPage.png)
+![Add Team](/Documentation/addTeamPage.PNG)
 ### Add Player
-![Add Player](/Documentation/addPlayerPage.png)
+![Add Player](/Documentation/addPlayerPage.PNG)
 ### Update Team
-![Update Team](/Documentation/updateTeamPage.png)
+![Update Team](/Documentation/updateTeamPage.PNG)
 ### Update Player
-![Update Player](/Documentation/addTeamPage.png)
+![Update Player](/Documentation/addTeamPage.PNG)
 
 
 <a name="improve"></a>
