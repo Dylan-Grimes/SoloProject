@@ -41,7 +41,7 @@ Codacy was used to review the code quality.
 * Codacy Tests
 	* [Front end Tests](https://app.codacy.com/manual/Dylan-Grimes/SoloProject/dashboard)
 	* [Back end Tests](https://app.codacy.com/manual/Dylan-Grimes/projectSpring/dashboard)
-* [GitHub for Selenimu tests(https://github.com/Dylan-Grimes/selenimumTests.git)
+* [GitHub for Selenium tests](https://github.com/Dylan-Grimes/selenimumTests.git)
 
 <a name="depl"></a>
 ## Deployment
@@ -64,8 +64,8 @@ Building the frontend was done using Jenkins with a GitHub webhook, both the fro
 *   Maven - Dependency Management
 *   [Git](https://github.com/Dylan-Grimes/soloProject) - VCS
 *   [Trello](https://trello.com/b/7bxN8Omr/individual-project) - Project Tracking
-### Continuous Integration
-![Continuous Integration](/Documentation/techUsed.PNG)
+### ContinuousIntegration
+![ContinuousIntegration](/Documentation/techUsed.PNG)
 <a name="FE"></a>
 ## Front End Design
 ### Wireframes
