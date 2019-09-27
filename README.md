@@ -69,13 +69,14 @@ Building the frontend was done using Jenkins with a GitHub webhook, both the fro
 ## Front End Design
 ### Wireframes
 ![Wireframes](/Documentation/pageWireframe.PNG)
+![Wireframes](/Documentation/addWireframe.PNG)
 
 
 ## Final Appearance
 ### Team Leaderboard
 ![Team Leaderboard](/Documentation/teamPage.PNG)
 ### Player Leaderboard
-![Player Leaderboard](/Documentation/PlayerPage.PNG)
+![Player Leaderboard](/Documentation/playerPage.PNG)
 ### Add Team
 ![Add Team](/Documentation/addTeamPage.PNG)
 ### Add Player
