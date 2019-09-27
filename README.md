@@ -41,7 +41,7 @@ Codacy was used to review the code quality.
 * Codacy Tests
 	* [Front end Tests](https://app.codacy.com/manual/Dylan-Grimes/SoloProject/dashboard)
 	* [Back end Tests](https://app.codacy.com/manual/Dylan-Grimes/projectSpring/dashboard)
-* [GitHub for Selenimu tests](https://github.com/Dylan-Grimes/selenimumTests.git)
+* [GitHub for Selenium tests](https://github.com/Dylan-Grimes/selenimumTests.git)
 
 <a name="depl"></a>
 ## Deployment
