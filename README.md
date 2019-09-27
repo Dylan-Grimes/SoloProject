@@ -42,6 +42,7 @@ Codacy was used to review the code quality.
 * Codacy Tests
 	* [Front end Tests](https://app.codacy.com/manual/Dylan-Grimes/SoloProject/dashboard)
 	* [Back end Tests](https://app.codacy.com/manual/Dylan-Grimes/projectSpring/dashboard)
+    * [GitHub for Selenimu tests](https://github.com/Dylan-Grimes/selenimumTests.git)
 
 <a name="depl"></a>
 ## Deployment
@@ -73,17 +74,17 @@ Pages
 
 ## Final Appearance
 ### Team Leaderboard
-![Team Leaderboard](/Documentation/teamLeaderboard.png)
+![Team Leaderboard](/Documentation/teamPage.png)
 ### Player Leaderboard
-![Player Leaderboard](/Documentation/teamLeaderboard.png)
+![Player Leaderboard](/Documentation/PlayerPage.png)
 ### Add Team
-![Add Team](/Documentation/addTeam.png)
+![Add Team](/Documentation/addTeamPage.png)
 ### Add Player
-![Add Player](/Documentation/addPlayer.png)
+![Add Player](/Documentation/addPlayerPage.png)
 ### Update Team
-![Update Team](/Documentation/updateTeam.png)
+![Update Team](/Documentation/updateTeamPage.png)
 ### Update Player
-![Update Player](/Documentation/addTeam.png)
+![Update Player](/Documentation/addTeamPage.png)
 
 
 <a name="improve"></a>
